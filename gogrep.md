@@ -1,4 +1,4 @@
 ## Learning to use ErrGroups
-[https://github.com/bketelsen/gogrep](GoGrep on github)
+[GoGrep on github](https://github.com/bketelsen/gogrep)
 
-[https://www.oreilly.com/learning/run-strikingly-fast-parallel-file-searches-in-go-with-sync-errgroup](The Article by Brian Ketelsen)
+[The Article by Brian Ketelsen](https://www.oreilly.com/learning/run-strikingly-fast-parallel-file-searches-in-go-with-sync-errgroup)
