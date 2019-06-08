@@ -17,8 +17,8 @@ func sieve(n int) []int {
 	limit := math.Sqrt(float64(n))
 
 	for i := 2; i <= int(limit); i++ {
-		for j := i + i; j <= n; j += i {
-			list[j] = false
+		for j := i * i; j <= n; j += i {
+			list[j] := false
 		}
 	}
 

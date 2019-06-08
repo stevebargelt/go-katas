@@ -1,7 +1,6 @@
 package main
 
-import 
-(
+import (
 	"fmt"
 	"math"
 )
@@ -9,15 +8,15 @@ import
 func sieve(n int) []int {
 
 	list := make(map[int]bool)
-	
-	for i := 2;i < n;i++ {
-		list[i] = true		
+
+	for i := 2; i < n; i++ {
+		list[i] = true
 	}
 
 	limit := math.Sqrt(float64(n))
 
 	for i := 2; i <= int(limit); i++ {
-		for j := i + i; j <= n; j+= i {
+		for j := i * i; j <= n; j += i {
 			list[j] = false
 		}
 	}
@@ -29,7 +28,6 @@ func sieve(n int) []int {
 	}
 	return output
 }
-
 
 func main() {
 	fmt.Println("Hello from prime 2")
